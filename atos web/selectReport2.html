@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select host</title><style>
+        .navbar{
+            background-color: rgba(255, 224, 184, 0.534);
+            border-radius: 5px;
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: black;
+        }
+        .container {
+            width: 360px;
+            height: 400px;
+            margin: 8% auto;
+            background: rgba(255, 224, 184, 0.534);
+            border-radius: 5px;
+            position: relative;
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 40px;
+            color: black;
+        }
+        .container form{
+            width: 280px;
+            position:absolute;
+            top: 100px;
+            left: 40px;
+        }
+        .btn-box{
+            width: 100%;
+            margin: 30px auto;
+            text-align: center;
+        }
+        form button{
+            width: 130px;
+            height: 35px;
+            margin: 0 10px;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid black;
+            outline: none;
+            color: black;
+            cursor: pointer;
+        }
+        button a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+            <ul>
+                <li><a href="index.html">Availability</a> </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <form>
+                <h3>Step 3 : Select Report Option</h3>
+                <label for="CSV">Output for CSV format</label>
+            <input type="checkbox" name="checkCSV" id="checkCSV">
+
+                <div class="btn-box">
+                    <button type="button"><a href="./Service/avail.cgi" download>Create Availability report</a></button>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
